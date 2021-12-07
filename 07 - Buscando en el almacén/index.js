@@ -2,7 +2,7 @@ function contains(store, searchProduct) {
   return (
     typeof store === "object"
     ? Object.values(store).some( contenedor => contains(contenedor, searchProduct) )
-    :store === searchProduct
+    : store === searchProduct
   )
 }
 
