@@ -5,7 +5,7 @@ function getCoins(change) {
   for (let i = coins.length-1; i >= 0; i--) {
     if(change / coins[i] >= 1){
       cambio[i] = Math.floor(change / coins[i])
-      change = change - (coins[i] * Math.floor(change / coins[i])) 
+      change = change % coins[i]
     }
   }
   return cambio
