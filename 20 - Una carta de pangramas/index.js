@@ -1,6 +1,6 @@
 function pangram(letter) {
   const abc = "abcdefghijklmnñopqrstuvwxyz".split('')
-  letter = letter.normalize("NFD").normalize().toLowerCase();
+  letter = letter.normalize().toLowerCase();
   return abc.every(character => letter.includes(character))
 }
 
