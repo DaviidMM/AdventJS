@@ -10,6 +10,7 @@ Pero **tiene limitaciones** 🥲: al reemplazar el carácter se debe mantener el
 
 Necesitamos **una función que nos diga si podemos reconfigurar una máquina para que de un regalo pueda pasar a fabricar otro según las reglas** mencionadas. Lo mejor es que veamos un ejemplo:
 
+```javascript
 const from = 'BAL'
 const to   = 'LIB'
 const canReconfigure(from, to) // true
@@ -33,3 +34,4 @@ const to   = 'MID'
 cons canReconfigure(from, to) // false
 /* no se puede hacer la transformación:
 M -> M (BIEN, asigna el mismo carácter a si mismo)
+```
